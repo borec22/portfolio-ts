@@ -1,0 +1,10 @@
+.headerBlock {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+
+   height: 80px;
+
+   border: 1px solid;
+   background-color: #e26f6f;
+}

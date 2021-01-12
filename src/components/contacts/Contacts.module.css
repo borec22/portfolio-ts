@@ -1,0 +1,33 @@
+.contactsBlock {
+   width: 100%;
+   min-height: 30vh;
+
+   border: 1px solid;
+   background-color: #e26f6f;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: flex-start;
+
+   composes: globalContainer from '../../common/styles/styles.module.css';
+}
+
+.title {
+   border: 1px solid;
+}
+
+.form {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   border: 1px solid;
+}
+
+.form input,
+.form textarea {
+   width: 286px;
+}
