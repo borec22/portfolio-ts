@@ -1,17 +1,34 @@
 import React from 'react';
-import classes from './Contacts.module.css';
+import classes from './Contacts.module.scss';
+import {Title} from '../../common/components/Title/Title';
+import {Button} from '../../common/components/Button/Button';
 
 export const Contacts = () => {
    return (
-      <div className={classes.contactsBlock}>
+      <div id='contacts' className={classes.contactsBlock}>
          <div className={classes.container}>
-            <h2 className={classes.title}>Contact</h2>
-            <form action="#" className={classes.form}>
-               <input type="text"/>
-               <input type="text"/>
-               <textarea name=""> </textarea>
+            <Title value='Contact' description='Feel free to contact me anytime'/>
 
-               <button>Send Message</button>
+            <form action="#" className={classes.form}>
+               <input type="text"
+                      name="name"
+                      className={classes.formControl}
+                      placeholder="Name"
+                      required/>
+
+               <input type="email"
+                      name='email'
+                      className={classes.formControl}
+                      placeholder="Email"
+                      required/>
+
+               <textarea name="message"
+                         className={classes.formControl}
+                         placeholder="Your message"
+                         rows={5}
+                         required/>
+
+               <Button>Send Message</Button>
             </form>
          </div>
       </div>

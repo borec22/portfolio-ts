@@ -1,19 +1,48 @@
-import React from 'react';
-import classes from './Home.module.css';
+import React, {useEffect, useRef, useState} from 'react';
+// @ts-ignore
+import NET from 'vanta/dist/vanta.net.min';
+import classes from './Home.module.scss';
+import meImage from '../../assets/images/me.jpg';
+// @ts-ignore
+import * as THREE from 'three';
 
 export const Home = () => {
-    return (
-        <div className={classes.homeBlock}>
-            <div className={classes.container}>
-                <div className={classes.greeting}>
-                    <span>Hi there</span>
-                    <h1>I am Serhii Romanchuk</h1>
-                    <p>Frontend Developer</p>
-                </div>
-                <div className={classes.mainPhoto}>
+   const [vantaEffect, setVantaEffect] = useState(0);
+   const vantaRef = useRef(null);
+   useEffect(() => {
+      if (!vantaEffect) {
+         setVantaEffect(
+            NET({
+               el: vantaRef.current,
+               THREE,
+               color: 0x354d3e,
+               backgroundColor: 0x90914,
+               maxDistance: 21.00,
+            })
+         );
+      }
+      return () => {
+         if (vantaEffect) {
+            // @ts-ignore
+            vantaEffect.destory();
+         }
+      };
+   }, [vantaEffect]);
 
-                </div>
+   return (
+      <div id='home' className={classes.homeBlock} ref={vantaRef}>
+         <div className={classes.container}>
+            <div className={classes.greeting}>
+               <span>Hi there</span>
+               <h1>I am <span>Serhii</span> <span>Romanchuk</span></h1>
+               <p>React Front-end Developer</p>
             </div>
-        </div>
-    );
+            <div className={classes.borderPhoto}>
+               <div className={classes.mainPhoto} style={{backgroundImage: `url(${meImage})`}}>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   );
 }

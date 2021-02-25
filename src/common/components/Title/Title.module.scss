@@ -1,0 +1,43 @@
+@import '../../sass/variables';
+
+.title {
+   margin-bottom: 83px;
+
+   .description {
+      font-size: 15px;
+
+      margin: 0 0 17px;
+   }
+
+   h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 100%;
+
+      position: relative;
+
+      margin: 0 0 37px 0;
+
+      letter-spacing: -.25px;
+
+      color: $titleColor;
+   }
+
+   &::after {
+      position: absolute;
+      left: 50%;
+
+      display: block;
+      //margin: 0 auto 0 auto;
+      //right: 0;
+
+      width: 75px;
+      height: 4px;
+
+      content: '';
+      transform: translate(-50%, 50%);
+
+      background-color: $primaryColor;
+   }
+}

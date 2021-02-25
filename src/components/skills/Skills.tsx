@@ -1,55 +1,83 @@
-import classes from './Skills.module.css';
+import React from 'react';
+import classes from './Skills.module.scss';
 import {Skill} from './skill/Skill';
+import {Title} from '../../common/components/Title/Title';
+import {StyleType} from '../works/Works';
+import ReactImage from '../../assets/images/react.png';
+import ReduxImage from '../../assets/images/redux.png';
+import TypeScriptImage from '../../assets/images/ts.png';
+import JSImage from '../../assets/images/js.png';
+import HTMLImage from '../../assets/images/html5.png';
+import CSSImage from '../../assets/images/css3.png';
+
+
 
 type SkillType = {
    id: number
-   title: string
-   description: string
+   title: string,
+   style: StyleType
 }
 
 const skills: SkillType[] = [
    {
       id: 1,
-      title: 'HTML',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sequi!'
+      title: 'React',
+      style: {
+         backgroundImage: `url(${ReactImage})`,
+      }
    },
    {
       id: 2,
-      title: 'CSS',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sequi!'
+      title: 'Redux',
+      style: {
+         backgroundImage: `url(${ReduxImage})`,
+      }
    },
    {
       id: 3,
-      title: 'JS',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sequi!'
+      title: 'TypeScript',
+      style: {
+         backgroundImage: `url(${TypeScriptImage})`,
+      }
    },
    {
       id: 4,
-      title: 'Typescript',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sequi!'
+      title: 'JS',
+      style: {
+         backgroundImage: `url(${JSImage})`,
+      }
    },
    {
       id: 5,
-      title: 'Git', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sequi!'
+      title: 'HTML5',
+      style: {
+         backgroundImage: `url(${HTMLImage})`,
+      }
    },
    {
       id: 6,
-      title: 'Material-UI',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sequi!'
+      title: 'CSS3',
+      style: {
+         backgroundImage: `url(${CSSImage})`,
+      }
    },
 ];
 
+
 export const Skills = () => {
+
+
    return (
-      <div className={classes.skillsBlock}>
+      <div className={classes.skillsBlock} id='skills'>
          <div className={classes.container}>
-            <h2 className={classes.title}>My Skills</h2>
+            <Title value='My Skills' description='My current stack of technologies'/>
             <div className={classes.skills}>
                {skills.map(skill => <Skill key={skill.id}
                                            title={skill.title}
-                                           description={skill.description}/>)}
+                                           style={skill.style}/>)}
             </div>
          </div>
       </div>
    );
 }
+

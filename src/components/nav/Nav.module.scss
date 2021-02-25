@@ -1,0 +1,26 @@
+@import 'src/common/sass/variables';
+@import 'src/common/sass/mixins';
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+
+   width: 370px;
+   padding: 23px 50px;
+
+   .navItem {
+      .navLink {
+         font-size: 15px;
+
+         padding: 0;
+
+         text-decoration: none;
+
+         color: #e6e6e6;
+
+         &:hover {
+            color: $primaryColor;
+         }
+      }
+   }
+}

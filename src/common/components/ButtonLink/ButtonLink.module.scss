@@ -1,0 +1,37 @@
+@import '../../sass/variables';
+
+.btn {
+   font-size: 16px;
+   line-height: 1.5;
+
+   padding: 10px 35px;
+
+   transition: color .15s ease-in-out,
+   background-color .15s ease-in-out,
+   border-color .15s ease-in-out,
+   box-shadow .15s ease-in-out;
+
+   color: $buttonTextColor;
+   border: 1px solid $primaryColor !important;
+   border-radius: 30px;
+   background-color: $primaryColor !important;
+   position: relative;
+   z-index: 1;
+
+   &:focus {
+      background-color: $buttonTextSelectedColor !important;
+   }
+
+   &:focus,
+   &:hover {
+      border-color: $buttonTextSelectedColor !important;
+      outline: none;
+      cursor: pointer;
+      box-shadow: none !important;
+   }
+}
+
+a {
+   transition: all .15s ease-in-out;
+   text-decoration: none;
+}

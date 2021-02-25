@@ -1,0 +1,37 @@
+@import './src/common/sass/variables';
+@import './src/common/sass/mixins';
+
+.skill {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+
+   width: 300px;
+   height: 350px;
+   margin-bottom: 45px;
+
+   //border: 1px solid;
+   background-color: #1f1f20;
+   @include borderBottomHover();
+
+   .icon {
+      width: 120px;
+      height: 120px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+
+   .title {
+      font-size: 20px;
+      font-weight: 500;
+
+      margin-top: 12px;
+
+      letter-spacing: -.5px;
+
+      color: $titleSecondaryColor;
+   }
+}

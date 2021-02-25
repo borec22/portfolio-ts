@@ -1,0 +1,23 @@
+@import './variables';
+
+@mixin globalContainer(
+   $width: 80%,
+   $height: 100%,
+   $margin: 0 auto,
+   $border: 1px solid
+) {
+   width: $width;
+   height: $height;
+   margin: $margin;
+
+   //border: $border;
+}
+
+@mixin borderBottomHover {
+   border-bottom: 2px solid transparent;
+   transition: all .15s ease-in-out;
+
+   &:hover {
+      border-bottom-color: $primaryColor;
+   }
+}

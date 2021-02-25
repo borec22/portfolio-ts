@@ -1,17 +1,19 @@
 import React from 'react';
-import classes from './Skill.module.css';
+import classes from './Skill.module.scss';
+import {StyleType} from '../../works/Works';
 
 export type PropsType = {
    title: string
-   description: string
+   style: StyleType
 }
 
-export const Skill: React.FC<PropsType> = (props) => {
-    return (
-        <div className={classes.skill}>
-            <div className={classes.icon}></div>
-            <h3>{props.title}</h3>
-            <span className={classes.description}>{props.description}</span>
-        </div>
-    );
+export const Skill: React.FC<PropsType> = ({style, title, ...props}) => {
+   /*const IconComponent = getKeyValue<keyof IconsType, IconsType>(icon)(Icons);*/
+
+   return (
+      <div className={classes.skill}>
+         <div className={classes.icon} style={style}> </div>
+         <h3 className={classes.title}>{title}</h3>
+      </div>
+   );
 }
