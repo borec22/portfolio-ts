@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio-ts/static/css/main.f5a8ff3c.chunk.css",
-    "main.js": "/portfolio-ts/static/js/main.0d8aef92.chunk.js",
-    "main.js.map": "/portfolio-ts/static/js/main.0d8aef92.chunk.js.map",
-    "runtime-main.js": "/portfolio-ts/static/js/runtime-main.90a95ab0.js",
-    "runtime-main.js.map": "/portfolio-ts/static/js/runtime-main.90a95ab0.js.map",
-    "static/js/2.e5ed18dc.chunk.js": "/portfolio-ts/static/js/2.e5ed18dc.chunk.js",
-    "static/js/2.e5ed18dc.chunk.js.map": "/portfolio-ts/static/js/2.e5ed18dc.chunk.js.map",
-    "static/js/3.f6502737.chunk.js": "/portfolio-ts/static/js/3.f6502737.chunk.js",
-    "static/js/3.f6502737.chunk.js.map": "/portfolio-ts/static/js/3.f6502737.chunk.js.map",
+    "main.css": "/portfolio-ts/static/css/main.7d075c60.chunk.css",
+    "main.js": "/portfolio-ts/static/js/main.ce45aca9.chunk.js",
+    "main.js.map": "/portfolio-ts/static/js/main.ce45aca9.chunk.js.map",
+    "runtime-main.js": "/portfolio-ts/static/js/runtime-main.b31012de.js",
+    "runtime-main.js.map": "/portfolio-ts/static/js/runtime-main.b31012de.js.map",
+    "static/js/2.f90338b7.chunk.js": "/portfolio-ts/static/js/2.f90338b7.chunk.js",
+    "static/js/2.f90338b7.chunk.js.map": "/portfolio-ts/static/js/2.f90338b7.chunk.js.map",
+    "static/js/3.9cfb3bc4.chunk.js": "/portfolio-ts/static/js/3.9cfb3bc4.chunk.js",
+    "static/js/3.9cfb3bc4.chunk.js.map": "/portfolio-ts/static/js/3.9cfb3bc4.chunk.js.map",
     "index.html": "/portfolio-ts/index.html",
-    "static/css/main.f5a8ff3c.chunk.css.map": "/portfolio-ts/static/css/main.f5a8ff3c.chunk.css.map",
-    "static/js/2.e5ed18dc.chunk.js.LICENSE.txt": "/portfolio-ts/static/js/2.e5ed18dc.chunk.js.LICENSE.txt"
+    "static/css/main.7d075c60.chunk.css.map": "/portfolio-ts/static/css/main.7d075c60.chunk.css.map",
+    "static/js/2.f90338b7.chunk.js.LICENSE.txt": "/portfolio-ts/static/js/2.f90338b7.chunk.js.LICENSE.txt",
+    "static/media/css3.8aa8f13d.png": "/portfolio-ts/static/media/css3.8aa8f13d.png",
+    "static/media/html5.2e668c95.png": "/portfolio-ts/static/media/html5.2e668c95.png",
+    "static/media/map.ee40813a.jpg": "/portfolio-ts/static/media/map.ee40813a.jpg",
+    "static/media/me2.81f399cb.png": "/portfolio-ts/static/media/me2.81f399cb.png",
+    "static/media/react.ccbd9d34.png": "/portfolio-ts/static/media/react.ccbd9d34.png",
+    "static/media/redux.45e6cfea.png": "/portfolio-ts/static/media/redux.45e6cfea.png",
+    "static/media/todolists.85046c43.png": "/portfolio-ts/static/media/todolists.85046c43.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.90a95ab0.js",
-    "static/js/2.e5ed18dc.chunk.js",
-    "static/css/main.f5a8ff3c.chunk.css",
-    "static/js/main.0d8aef92.chunk.js"
+    "static/js/runtime-main.b31012de.js",
+    "static/js/2.f90338b7.chunk.js",
+    "static/css/main.7d075c60.chunk.css",
+    "static/js/main.ce45aca9.chunk.js"
   ]
 }
