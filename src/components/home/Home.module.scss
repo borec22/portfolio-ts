@@ -7,20 +7,20 @@
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: 50% 50%;
-   padding: 0;
    position: relative;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    overflow: hidden;
+   padding: 130px 0;
 
    .container {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      @include globalContainer(55%);
+      @include globalContainer(60%);
 
       .greeting {
          width: 500px;
@@ -32,7 +32,7 @@
 
          h1 {
             font-size: 62px;
-            color:$titleColor;
+            color: $titleColor;
             font-weight: 700;
             letter-spacing: 1px;
             margin: 0 0 11px;
@@ -40,7 +40,7 @@
 
             span {
                font-size: 62px;
-               color:$titleColor;
+               color: $titleColor;
                font-weight: 700;
                letter-spacing: 1px;
                margin: 0 0 11px;
@@ -90,11 +90,8 @@
 
          }
       }
-
-      @media screen and (max-width: 1003px) {
-         justify-content: center;
-      }
    }
+
    .background {
       position: absolute;
       left: 0;
@@ -105,6 +102,55 @@
       width: 100%;
       z-index: 0;
       opacity: 0.8;
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .homeBlock {
+      min-height: 1010px;
+      width: 100%;
+      line-height: 3em;
+
+      .container {
+         .greeting {
+            margin-bottom: 40px;
+            font-size: 15px;
+            span {
+               font-size: 19px !important;
+            }
+
+            h1 {
+               font-size: 32px !important;
+               line-height: 1em !important;
+
+               span {
+                  font-size: 32px !important;
+
+                  &::after {
+                     top: 31px !important;
+                     height: 9px !important;
+                  }
+               }
+            }
+
+            p {
+               font-size: 21px !important;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1546px) {
+   .homeBlock {
+      height: 130vh;
+
+      .container {
+         box-sizing: content-box;
+         .greeting {
+            margin-bottom: 50px;
+         }
+      }
    }
 }
 

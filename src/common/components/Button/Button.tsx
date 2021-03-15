@@ -1,12 +1,20 @@
 import React from 'react';
-import classes from '../ButtonLink/ButtonLink.module.scss';
+import classes from './Button.module.scss';
 
-export type PropsType = {};
+export type PropsType = {
+   isLink?: boolean
+   href?: string
+};
 
 export const Button: React.FC<PropsType> = (props) => {
+   const {isLink, href} = props;
+
    return (
       <>
-         <button type='submit' className={classes.btn}>{props.children}</button>
+         {isLink ?
+            <a href={href} target='_blank' role='button' className={classes.btn}>{props.children}</a> :
+            <button type='submit' className={classes.btn}>{props.children}</button>
+         }
       </>
    );
 }

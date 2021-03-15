@@ -2,13 +2,14 @@ import React, {useEffect, useRef, useState} from 'react';
 // @ts-ignore
 import NET from 'vanta/dist/vanta.net.min';
 import classes from './Home.module.scss';
-import meImage from '../../assets/images/me.jpg';
+import meImage from '../../assets/images/me2.png';
 // @ts-ignore
 import * as THREE from 'three';
 
 export const Home = () => {
    const [vantaEffect, setVantaEffect] = useState(0);
    const vantaRef = useRef(null);
+
    useEffect(() => {
       if (!vantaEffect) {
          setVantaEffect(
